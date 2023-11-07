@@ -38,6 +38,74 @@
       font-size: 131px;
     }
   }
+  .vacancy{
+    &__title{
+      font-size: 70px;
+      border-top: 3px solid $textColor;
+      border-bottom: 3px solid $textColor;
+      &::after {
+        top: 50%;
+        right: 0;
+        transform: translate(-50%, -50%);
+        width: 100px;
+        height: 10px;
+      }
+      &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 4.5%;
+        transform: translate(-50%, -50%);
+        width: 10px;
+        height: 100px;
+        background-color: #FFFFFF;
+      }
+    }
+    &__content-text-year__number{
+      font-size: 123px;
+    }
+    &__content-text-year__text{
+      font-size: 23px;
+    }
+    &__content-text-desc__text{
+      font-size: 30px;
+    }
+    &__tabs-nav-item {
+      font-size: 22px;
+    }
+    &__block-item{
+      border-top: 2px solid #303030;
+    }
+    &__block-item__text{
+      font-size: 22px;
+    }
+    &__link-title{
+      font-size: 26px;
+    }
+  }
+  .expand .vacancy__title::before{
+    transform: rotate(90deg) translate(-50px, 8px);
+  }
+  .contact{
+    &__item{
+      font-size: 26px;
+      padding: 15px 25px;
+    }
+    &__us-text{
+      font-size: 35px;
+    }
+    &__us-link{
+      font-size: 35px;
+      border-bottom: 3px solid $textColor;
+    }
+  }
+}
+@media (max-width: 1630px){
+  .contact{
+    &__us{
+      margin-top: calc(45% - 5px);
+    }
+  }
 }
 @media (max-width: 1402px){
   .promo{
@@ -48,15 +116,6 @@
 }
 @media (max-width: 1270px){
   .contact{
-    &__inner{
-     flex-direction: column;
-     padding-right: 0;
-     align-items: center;
-     gap: 250px 0;
-    }
-    &__items{
-      align-self: start;
-    }
     &__item-container:nth-of-type(1){
       top: -111px;
       left: 240px;
@@ -64,16 +123,6 @@
     &__item-container:nth-of-type(3){
       top: 87px;
       left: 221px;
-    }
-    &__us{
-      padding: 0 0 0 0;
-    }
-    &__us-text{
-      font-size: calc(15px + 20 * (100vw / 1270));
-      width: clamp(300px, 70vw, 700px);
-    }
-    &__us-link{
-      font-size: calc(15px + 20 * (100vw / 1270));
     }
   }
 }

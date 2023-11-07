@@ -433,11 +433,11 @@ body{
 }
 .contact{
   overflow: hidden;
-  padding: 350px 0 100px 0;
+  padding: 350px 0 200px 0;
   &__inner{
-    display: flex;
-    justify-content: space-between;
-    padding-right: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 800px));
+    justify-content: center;
   }
   &__items {
     display: flex;
@@ -446,6 +446,7 @@ body{
     justify-content: center;
     gap: 20px 0;
     position: relative;
+    align-self: center;
   }
   &__item-container{
     border: 3px solid #C31E54;
@@ -476,14 +477,9 @@ body{
     padding: 1vw 2vw;
     white-space: nowrap;
   }
-
-  &__us{
-    padding: 0 0 0 250px;
-  }
   &__us-text{
     font-family: $firstFont;
-    width: clamp(300px, 40vw, 700px);
-    font-size: 35px;
+    font-size: calc(15px + 20 * (100vw / 1270));
     line-height: 140%;
     letter-spacing: 0.7px;
     color: $textColor;
@@ -491,7 +487,7 @@ body{
   &__us-link{
     font-family: $firstFont;
     text-decoration: none;
-    font-size: 35px;
+    font-size: calc(15px + 20 * (100vw / 1270));
     line-height: 140%;
     color: $textColor;
     border-bottom: 0.3vw solid $textColor;
