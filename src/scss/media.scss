@@ -4,28 +4,9 @@
     &__title-two-text{
       font-size: 168px;
     }
-    &__item-container{
-      border: 3px solid #C31E54;
-      width: 72px;
-    }
-    &__item-container:nth-child(1){
-      height: 231px;
-      }
-    &__item-container:nth-child(2){
-      height: 413px;
-    }
-    &__item-container:nth-child(3){
-      height: 236px;
-  
-    }
-    &__item-container:nth-child(4){
-      height: 260px;
-    }
-    &__item-container:nth-child(5){
-      height: 400px;
-    }
     &__item{
       font-size: 20px;
+      padding: 15px 20px;
     }
     &__content-text{
       font-size: 25px;
@@ -87,6 +68,9 @@
     transform: rotate(90deg) translate(-50px, 8px);
   }
   .contact{
+    &__item-container{
+      border: 3px solid #C31E54;
+    }
     &__item{
       font-size: 26px;
       padding: 15px 25px;
@@ -94,9 +78,24 @@
     &__us-text{
       font-size: 35px;
     }
+
     &__us-link{
       font-size: 35px;
       border-bottom: 3px solid $textColor;
+    }
+  }
+}
+@media (max-width: 1880px){
+  .promo{
+    &__item{
+      font-size: calc(1px + 20 * (100vw / 1880));
+    }
+  }
+}
+@media (max-width: 1435px){
+  .promo{
+    &__item{
+      font-size: calc(5px + 9 * (100vw / 1435));
     }
   }
 }
@@ -114,19 +113,7 @@
     }
   }
 }
-@media (max-width: 1270px){
-  .contact{
-    &__item-container:nth-of-type(1){
-      top: -111px;
-      left: 240px;
-    }
-    &__item-container:nth-of-type(3){
-      top: 87px;
-      left: 221px;
-    }
-  }
-}
-@media (max-width: 1050px){
+@media (max-width: 1340px){
   .promo{
     padding: 50px 0 0 0;
     &__inner{
@@ -140,6 +127,9 @@
       grid-column: span 2;
       grid-row: 1/1;
       justify-self: center;
+    }
+    &__item{
+      font-size: calc(6px + 21 * (100vw / 1340));
     }
     &__title-one{
       margin: 15px 0 0 0;
@@ -166,6 +156,21 @@
       padding: 40px 10px 0 0;
   }
   }
+}
+@media (max-width: 1270px){
+  .contact{
+    &__item-container:nth-of-type(1){
+      top: -111px;
+      left: 240px;
+    }
+    &__item-container:nth-of-type(3){
+      top: 87px;
+      left: 221px;
+    }
+  }
+}
+@media (max-width: 1050px){
+ 
   .vacancy{
     &__content-text-main{
       gap: 0 50px;
@@ -191,10 +196,18 @@
   }
 }
 @media (max-width: 480px){
+  .promo{
+    &__item-container{
+      border: 2px solid #C31E54;
+    }
+  }
   .contact{
     padding: 250px 0 100px 0;
     &__item{
       font-size: 12px;
+    }
+    &__item-container{
+      border: 2px solid #C31E54;
     }
     &__item-container:nth-of-type(1){
       top: -60px;
