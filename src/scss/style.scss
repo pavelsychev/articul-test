@@ -400,6 +400,8 @@ body{
       border-radius: 129px;
       text-decoration: none;
       transition: all 0.3s ease 0s;
+      cursor: pointer;
+      z-index: 2;
       &:hover,
       &:focus,
       &:active{
