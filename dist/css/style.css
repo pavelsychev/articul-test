@@ -958,14 +958,14 @@ body {
     font-size: calc(1px + 1.0638297872vw);
   }
 }
-@media (max-width: 1435px) {
-  .promo__item {
-    font-size: calc(5px + 0.6271777003vw);
-  }
-}
 @media (max-width: 1630px) {
   .contact__us {
     margin-top: calc(45% - 5px);
+  }
+}
+@media (max-width: 1435px) {
+  .promo__item {
+    font-size: calc(5px + 0.6271777003vw);
   }
 }
 @media (max-width: 1402px) {

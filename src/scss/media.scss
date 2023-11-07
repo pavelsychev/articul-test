@@ -92,17 +92,17 @@
     }
   }
 }
-@media (max-width: 1435px){
-  .promo{
-    &__item{
-      font-size: calc(5px + 9 * (100vw / 1435));
-    }
-  }
-}
 @media (max-width: 1630px){
   .contact{
     &__us{
       margin-top: calc(45% - 5px);
+    }
+  }
+}
+@media (max-width: 1435px){
+  .promo{
+    &__item{
+      font-size: calc(5px + 9 * (100vw / 1435));
     }
   }
 }
