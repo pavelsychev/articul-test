@@ -44,7 +44,6 @@ function animation(){
         trigger: '.contact',
         start: 'top 30%',
         toggleActions: 'play none none reverse',
-        markers: true,
     }
 })
 tlArrow.from('.contact__items',{
