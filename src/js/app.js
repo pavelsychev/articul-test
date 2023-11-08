@@ -6,7 +6,12 @@
 
  import * as gsapJS from "./modules/gsap.js";
 
+
  //accordion
+ document.addEventListener('DOMContentLoaded', () => {
+  // Перемещение к началу страницы
+  window.scrollTo(0, 0);
+
  const tabs = document.querySelectorAll('.vacancy__item');
 
 function toggleTab(event) {
@@ -24,6 +29,5 @@ tabs.forEach((tab) => {
   tab.addEventListener('click', toggleTab);
 });
 
-document.addEventListener('DOMContentLoaded', () => {
   tabs.forEach((tab) => tab.classList.remove('expand'));
 });

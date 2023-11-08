@@ -438,7 +438,6 @@ body {
   flex-direction: column;
   height: 100%;
   width: 100%;
-  position: relative;
 }
 
 .container {
@@ -447,49 +446,10 @@ body {
   padding: 0 15px;
 }
 
-.start {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  background-color: #000000;
-  transform: translate(-50%, -50%);
-  display: flex;
-  align-items: start;
-  justify-content: center;
-  padding: 200px 0 0 0;
-  z-index: 999;
-}
-
-.start-img {
-  animation: logo-animation 2s cubic-bezier(0.87, 0, 0.13, 1) 0s 1 normal none;
-}
-
-@keyframes logo-animation {
-  0%, 100% {
-    transform: rotate(0deg);
-    transform-origin: 50% 50%;
-  }
-  10% {
-    transform: rotate(8deg);
-  }
-  20%, 40%, 60% {
-    transform: rotate(-10deg);
-  }
-  30%, 50%, 70% {
-    transform: rotate(10deg);
-  }
-  80% {
-    transform: rotate(-8deg);
-  }
-  90% {
-    transform: rotate(8deg);
-  }
-}
 .promo {
   overflow: hidden;
   padding: 100px 0 0 0;
+  position: relative;
 }
 .promo__inner {
   display: flex;
@@ -590,6 +550,46 @@ body {
   max-width: 400px;
 }
 
+.start {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: #000000;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  padding: 200px 0 0 0;
+  z-index: 999;
+}
+
+.start-img {
+  animation: logo-animation 2s cubic-bezier(0.87, 0, 0.13, 1) 0s 1 normal none;
+}
+
+@keyframes logo-animation {
+  0%, 100% {
+    transform: rotate(0deg);
+    transform-origin: 50% 50%;
+  }
+  10% {
+    transform: rotate(8deg);
+  }
+  20%, 40%, 60% {
+    transform: rotate(-10deg);
+  }
+  30%, 50%, 70% {
+    transform: rotate(10deg);
+  }
+  80% {
+    transform: rotate(-8deg);
+  }
+  90% {
+    transform: rotate(8deg);
+  }
+}
 .vacancy {
   overflow: hidden;
   padding: 150px 0 0 0;

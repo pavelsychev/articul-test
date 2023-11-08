@@ -11,7 +11,9 @@ function animation(){
     
     gsap.registerPlugin(ScrollTrigger);
     
+
     const tlIntro = gsap.timeline({})
+    
     tlIntro.to('.start', {
       duration: 1,
       opacity: 1,
