@@ -9,15 +9,21 @@
  //accordion
  const tabs = document.querySelectorAll('.vacancy__item');
 
-const reset = () => tabs.forEach((tab) => tab.classList.remove('expand'));
+function toggleTab(event) {
+  const clickedTab = event.target.parentNode;
+  const isExpanded = clickedTab.classList.contains('expand');
 
-function activate(e) {
-  if (!e.target.matches('.vacancy__title')) return;
-  reset();
-  tabs[e.target.dataset.index].classList.add('expand');
+  if (isExpanded) {
+    clickedTab.classList.remove('expand');
+  } else {
+    clickedTab.classList.add('expand');
+  }
 }
 
-const init = () => tabs[0].classList.add('expand');
+tabs.forEach((tab) => {
+  tab.addEventListener('click', toggleTab);
+});
 
-window.addEventListener('load',init,false);
-window.addEventListener('click',activate,false);
+document.addEventListener('DOMContentLoaded', () => {
+  tabs.forEach((tab) => tab.classList.remove('expand'));
+});
