@@ -89,7 +89,7 @@ body{
   display: flex;
   align-items: start;
   justify-content: center;
-  padding: 150px 0 0 0;
+  padding: 200px 0 0 0;
   z-index: 999;
 }
 .start-img{
@@ -233,6 +233,7 @@ body{
 .vacancy {
   overflow: hidden;
   padding: 150px 0 0 0;
+  z-index: 2;
   &__inner{
     display: grid;
     grid-template-columns: 1fr;
