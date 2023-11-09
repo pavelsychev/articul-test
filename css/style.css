@@ -746,6 +746,8 @@ body {
 .vacancy__block-item__text {
   font-family: "Magistral";
   font-weight: 300;
+  opacity: 0.8;
+  line-height: 145%;
   font-size: calc(10px + 0.6153846154vw);
 }
 .vacancy__link {
@@ -871,6 +873,7 @@ body {
   line-height: 140%;
   color: #FFF;
   border-bottom: 0.3vw solid #FFF;
+  transition: all 0.3s ease 0s;
 }
 .contact__us-link:hover, .contact__us-link:focus, .contact__us-link:active {
   color: #C31E54;
