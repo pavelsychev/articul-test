@@ -386,6 +386,8 @@ body{
     &__block-item__text{
       font-family: $secondFont;
       font-weight: 300;
+      opacity: 0.8;
+      line-height: 145%;
       font-size: calc(10px + 12 * (100vw / 1950));
     }
     &__link{
@@ -508,6 +510,7 @@ body{
     line-height: 140%;
     color: $textColor;
     border-bottom: 0.3vw solid $textColor;
+    transition: all 0.3s ease 0s;
     &:hover,
     &:focus,
     &:active{

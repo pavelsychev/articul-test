@@ -45,16 +45,26 @@ function animation(){
     scrollTrigger: {
         trigger: '.contact',
         start: 'top 30%',
-        toggleActions: 'play none none reverse',
     }
 })
-tlArrow.from('.contact__items',{
+tlArrow.from('.contact__item-container:nth-of-type(2)',{
     opacity: 0,
     x: -100,
+    duration: 1,
+    ease: "back.out(1)"
 }, '<')
-tlArrow.from('.contact__us',{
+tlArrow.from('.contact__item-container:first-child',{
     opacity: 0,
-    x: 100,
+    y: -100,
+    duration: 1,
+    ease: "back.out(1)"
 }, '<')
+tlArrow.from('.contact__item-container:last-child',{
+    opacity: 0,
+    y: 100,
+    duration: 1,
+    ease: "back.out(1)"
+}, '<')
+
 }
 
