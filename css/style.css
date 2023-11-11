@@ -814,6 +814,7 @@ body {
 .contact {
   overflow: hidden;
   padding: 350px 0 200px 0;
+  z-index: 2;
 }
 .contact__inner {
   display: grid;
