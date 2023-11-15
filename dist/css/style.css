@@ -975,7 +975,7 @@ body {
     font-size: calc(5px + 0.6271777003vw);
   }
 }
-@media (max-width: 1402px) {
+@media (max-width: 1403px) {
   .promo__content {
     margin: 100px 0 0 0;
   }
