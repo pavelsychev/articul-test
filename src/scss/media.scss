@@ -106,8 +106,12 @@
     }
   }
 }
-@media (max-width: 1403px){
-  .promo{
+@media (max-width: 1403px) {
+    .promo{
+    &__quantity{
+      width: 31vw;
+      height: 31vw;
+    }
     &__content{
         margin: 100px 0 0 0;
     }
